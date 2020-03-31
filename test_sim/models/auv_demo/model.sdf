@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='bot_demo'>
+  <model name='auv_demo'>
     <link name='hull'>
       <pose frame=''>0.004745 0.002289 0.10857 0 -0 0</pose>
       <inertial>
