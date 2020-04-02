@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='sauvc pool'>
+    <link name='pool'>
+      <gravity>0</gravity>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='pool_collision'>
+        <geometry>
+          <mesh>
+            <uri>model://sauvc pool/meshes/pool.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='pool_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://sauvc pool/meshes/pool.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>true</static>
+  </model>
+</sdf>

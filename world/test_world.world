@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+   <model name="sauvc pool">
+      <include>
+        <uri>model://sauvc pool</uri>
+        <pose>0 0 -1.4 0 0 0</pose>
+      </include>
+    </model>
+
+    <model name="sea_surface">
+      <include>
+        <uri>model://sea_surface</uri>
+        <pose>0 0 0 0 0 0</pose>
+      </include>
+    </model>
+  <include>
+      <uri>model://auv_demo</uri>
+      <!--<pose>0 0 3 0 0 0</pose>-->
+    </include>
+    </world>
+</sdf>

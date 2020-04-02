@@ -1,0 +1,298 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='auv_demo'>
+   <link name='hull'>
+	<pose>0 0 0 0 0 0</pose>
+	<inertial>
+	<mass>23</mass>
+	</inertial>
+	   <collision name="hull_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/hull.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="hull_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/hull.dae</uri>
+	     </mesh>
+	   </geometry>
+	 </visual>
+   </link>
+   <link name='thruster_1'>
+	<pose>0.125 -0.25 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_1_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_1_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+   <link name='thruster_2'>
+	<pose>0.125 0.25 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_2_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_2_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+   <link name='thruster_3'>
+	<pose>-0.25 0 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_3_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_3_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+   <link name='thruster_4'>
+	<pose>0 0.25 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_4_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_4_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+   <link name='thruster_5'>
+	<pose>0 -0.25 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_5_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_5_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+   <link name='thruster_p4'>
+	<pose>-0.125 0.25 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_p4_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_p4_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+   <link name='thruster_p5'>
+	<pose>-0.125 -0.25 0 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_p5_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_p5_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+
+   <link name='thruster_6'>
+	<pose>0 0 -0.25 0 0 0</pose>
+	<gravity>0</gravity>
+	<inertial>
+	<mass>0.39</mass>
+	</inertial>
+	   <collision name="thruster_6_collision">
+	      <geometry>
+		<mesh>
+		 <uri>model://auv_demo/meshes/thruster.dae</uri>
+	     	</mesh>
+	      </geometry>
+	    </collision>
+
+	 <visual name="thruster_6_visual">
+	   <geometry>
+	     <mesh>
+	       <uri>model://auv_demo/meshes/thruster.dae</uri>
+s	     </mesh>
+	   </geometry>
+           <material>
+	     <ambient>0 0 0 1</ambient>
+	     <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>1 1 1 1</emissive>
+	   </material>
+	 </visual>
+   </link>
+<joint name='hull_joint_1' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_1</child>
+</joint>
+<joint name='hull_joint_2' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_2</child>
+</joint>
+<joint name='hull_joint_3' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_3</child>
+</joint>
+<joint name='hull_joint_4' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_4</child>
+</joint>
+<joint name='hull_joint_5' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_5</child>
+</joint>
+<joint name='hull_joint_6' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_6</child>
+</joint>
+<joint name='hull_joint_p4' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_p4</child>
+</joint>
+<joint name='hull_joint_p5' type='fixed'>
+ <parent>hull</parent>
+ <child>thruster_p5</child>
+</joint>
+ <plugin name="freebuoyancy_gazebo" filename="libfreebuoyancy_gazebo.so">
+  <descriptionParam>robot_description</descriptionParam>
+  <fluidTopic>current</fluidTopic>
+  <alwaysOn>true</alwaysOn>
+  <surface>0 0 0</surface>
+  <updateRate>.001</updateRate>
+
+  <link name='hull'>
+    <buoyancy>
+      <compensation>1.4</compensation>
+      <origin xyz= "0 0 0"/>
+    </buoyancy>
+  </link>
+</plugin>
+<plugin name="data_publisher" filename="libdata_publisher.so"/>
+  </model>
+</sdf>
