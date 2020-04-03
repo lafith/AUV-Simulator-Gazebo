@@ -16,6 +16,7 @@ endif()
 find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   roscpp
+  synchronizer
 )
 
 # Depend on system install of Gazebo
@@ -30,9 +31,6 @@ catkin_package(
     gazebo_ros
 )
 
-#add_library(${PROJECT_NAME} src/bot_plugin.cpp)
-#target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
-
 add_library(freebuoyancy_gazebo SHARED
     src/freebuoyancy.cpp
     src/freebuoyancy.h
@@ -42,3 +40,9 @@ target_link_libraries(freebuoyancy_gazebo ${GAZEBO_LIBRARIES})
 add_library(data_publisher SHARED
     src/data_publisher.cpp)
 target_link_libraries(data_publisher ${GAZEBO_LIBRARIES})
+
+
+
+#add_executable(data_publisher src/data_publisher.cpp)
+#target_link_libraries(data_publisher ${catkin_LIBRARIES})
+#add_dependencies(data_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

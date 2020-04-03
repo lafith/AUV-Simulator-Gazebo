@@ -293,6 +293,7 @@ s	     </mesh>
     </buoyancy>
   </link>
 </plugin>
-<plugin name="data_publisher" filename="libdata_publisher.so"/>
+ <plugin name="data_publisher" filename="libdata_publisher.so"/>
+
   </model>
 </sdf>
