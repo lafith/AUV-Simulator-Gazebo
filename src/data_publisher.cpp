@@ -40,7 +40,6 @@ namespace gazebo{
     msg.angular={orientation.Roll()*(180/3.14),orientation.Pitch()*(180/3.14),orientation.Yaw()*(180/3.14)};
     msg.linear={accel_.X(),accel_.Y(),accel_.Z()};
     msg.depth={-(this->model->WorldPose().Pos().Z())};
-    std::cerr<<msg<<std::endl;
     this->dpPub.publish(msg);
   }
 

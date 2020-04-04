@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   roscpp
   synchronizer
+  thruster_controller
 )
 
 # Depend on system install of Gazebo
@@ -40,6 +41,10 @@ target_link_libraries(freebuoyancy_gazebo ${GAZEBO_LIBRARIES})
 add_library(data_publisher SHARED
     src/data_publisher.cpp)
 target_link_libraries(data_publisher ${GAZEBO_LIBRARIES})
+
+add_library(thruster_plugin SHARED
+    src/thruster_plugin.cpp)
+target_link_libraries(thruster_plugin ${GAZEBO_LIBRARIES})
 
 
 
