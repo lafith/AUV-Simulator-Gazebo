@@ -4,7 +4,7 @@
    <link name='hull'>
 	<pose>0 0 0 0 0 0</pose>
 	<inertial>
-	<mass>23</mass>
+	<mass>30</mass>
 	</inertial>
 	   <collision name="hull_collision">
 	      <geometry>
@@ -437,7 +437,7 @@ s	     </mesh>
 </plugin>-->
 <!--<plugin name="buoyancy_plugin" filename="libbuoyancy_plugin.so"/>-->
 <plugin name="BuoyancyPlugin" filename="libbuoyancy_gazebo_plugin.so">
-     <fluid_density>1000</fluid_density>
+     <fluid_density>997</fluid_density>
      <fluid_level>0.0</fluid_level>
      <linear_drag>10.0</linear_drag>
      <angular_drag>4.0</angular_drag>
@@ -445,7 +445,7 @@ s	     </mesh>
        <link_name>hull</link_name>
        <geometry>
          <box>
-          <size>0.5 0.5 0.5</size>
+           <size>0.5 0.5 0.5</size>
          </box>
        </geometry>
      </buoyancy>
