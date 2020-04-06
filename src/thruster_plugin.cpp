@@ -66,15 +66,7 @@ namespace gazebo{
       thrusterspeeds_[i]=(double)_msg->data[i];
 //      std::cout<<"AFTER:"<<i<<" = "<<thrusterspeeds_[i]<<std::endl;
     }
-/*    this->thrusters[0]->AddRelativeForce(ignition::math::Vector3d(0, 0, -thrusterspeeds_[0]));
-    this->thrusters[1]->AddRelativeForce(ignition::math::Vector3d(0, 0, -thrusterspeeds_[1]));
-    this->thrusters[2]->AddRelativeForce(ignition::math::Vector3d(0, 0, -thrusterspeeds_[2]));
-    this->thrusters[3]->AddRelativeForce(ignition::math::Vector3d(thrusterspeeds_[3], 0, 0));
-    this->thrusters[6]->AddRelativeForce(ignition::math::Vector3d(thrusterspeeds_[3], 0, 0));
-    this->thrusters[4]->AddRelativeForce(ignition::math::Vector3d(thrusterspeeds_[4], 0, 0));
-    this->thrusters[7]->AddRelativeForce(ignition::math::Vector3d(thrusterspeeds_[4], 0, 0));
-    this->thrusters[5]->AddRelativeForce(ignition::math::Vector3d(0, -thrusterspeeds_[5], 0));
-*/
+
   }
   /// \brief ROS helper function that processes messages
   private: void QueueThread()
@@ -99,7 +91,7 @@ namespace gazebo{
       initial=initial-1470.0;
       adjusted=(initial/370.0)*1.85;
     }
-    adjusted=adjusted*9.8*1000;
+    adjusted=adjusted*9.8;
     */
     if(initial>=1470.0 && initial <= 1530.0){
             adjusted=0.0;
@@ -119,9 +111,6 @@ public: void OnFrame(){
     this->thrusters[4]->AddRelativeForce(ignition::math::Vector3d(AdjustForce(thrusterspeeds_[4]), 0, 0));
     this->thrusters[7]->AddRelativeForce(ignition::math::Vector3d(AdjustForce(thrusterspeeds_[4]), 0, 0));
     this->thrusters[5]->AddRelativeForce(ignition::math::Vector3d(0, -AdjustForce(thrusterspeeds_[5]), 0));
-//    for(int i=0;i<2;i++){
-//    std::cout<<"Adjusted Thrust: "<<i<<" = "<<AdjustForce(thrusterspeeds_[i])<<std::endl;
-//}
 }
 
 

@@ -23,6 +23,9 @@
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>synchronizer</exec_depend>
+  <depend>sensor_msgs</depend>
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
   <export>
     <!-- Other tools can request additional information be placed here -->
     <gazebo_ros plugin_path="${prefix}/../../lib" gazebo_media_path="${prefix}" />

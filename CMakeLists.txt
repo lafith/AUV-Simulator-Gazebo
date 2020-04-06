@@ -18,13 +18,18 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   synchronizer
   thruster_controller
+  cv_bridge
+  image_transport
+  sensor_msgs
+  std_msgs
 )
 
 # Depend on system install of Gazebo
 find_package(gazebo REQUIRED)
+find_package(OpenCV 3.2 REQUIRED)
 
 link_directories(${GAZEBO_LIBRARY_DIRS})
-include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
+include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS} ${OPENCV_INCLUDE_DIRS})
 
 catkin_package(
   DEPENDS
@@ -46,8 +51,14 @@ add_library(thruster_plugin SHARED
     src/thruster_plugin.cpp)
 target_link_libraries(thruster_plugin ${GAZEBO_LIBRARIES})
 
+#add_library(test_buoyancy_plugin SHARED
+#    src/test_buoyancy_plugin.cpp)
+#target_link_libraries(test_buoyancy_plugin ${GAZEBO_LIBRARIES})
 
 
 #add_executable(data_publisher src/data_publisher.cpp)
 #target_link_libraries(data_publisher ${catkin_LIBRARIES})
 #add_dependencies(data_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+#add_executable(sim_image_converter src/sim_image_converter.cpp)
+#target_link_libraries(sim_image_converter ${catkin_LIBRARIES} ${OpenCV_LIBS})
