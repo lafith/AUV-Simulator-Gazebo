@@ -4,7 +4,7 @@
    <link name='hull'>
 	<pose>0 0 0 0 0 0</pose>
 	<inertial>
-	<mass>30</mass>
+	<mass>14.172</mass>
 	</inertial>
 	   <collision name="hull_collision">
 	      <geometry>
